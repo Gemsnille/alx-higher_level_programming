@@ -3,7 +3,6 @@
 /**
  * print_python_string - Prints information about Python strings.
  * @p: A PyObject string object.
- * Auth: Gemsnille
  */
 void print_python_string(PyObject *p)
 {
@@ -23,7 +22,7 @@ void print_python_string(PyObject *p)
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
 	else
-i		printf("  type: compact unicode object\n");
+		printf("  type: compact unicode object\n");
 	printf("  length: %ld\n", length);
 	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &length));
 }
